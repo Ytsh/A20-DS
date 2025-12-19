@@ -1,3 +1,8 @@
+@import './tokens/colors.css';
+@import './tokens/typography.css';
+/* node js, install, to check if node js exists - npm enter hana
+to install react -. npx create-react-app app_ko_naam (a20-ds)
+*/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
