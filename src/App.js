@@ -3,6 +3,8 @@ import './App.css';
 import WelcomeWithProps from './components/WelcomeWithProps';
 import './components/atoms/buttons.css';
 import Button from './components/atoms/Button';
+import './components/atoms/input.css';
+import Input from './components/atoms/Input';
 // function add():
 //   print (5+6)
 
@@ -26,8 +28,16 @@ import Button from './components/atoms/Button';
 function App() {
   return (
     <>
-    <button className='btn btn-primary btn-sm btn-disabled'>Primary Button</button>
-    <Button variant='secondary' size='sm' disabled={true} >Submit</Button>
+    <br/>
+    <br/>
+    <br/>
+    {/* <input className='form-input' placeholder='Enter your name'/> */}
+    <Input label="First Name:" 
+      error="Please fill this"
+      placeholder='Enter your name' />
+    {/* <button className='btn btn-primary btn-sm btn-disabled' >Primary Button</button> */}
+    <Button variant='secondar' size='sm'>Submit</Button>
+    <Button variant='danger' size='sm' >Submit</Button>
       {/* <WelcomeWithProps welcomeMessage="WelcometoOurClass" number="10" /> */}
     </>
   );

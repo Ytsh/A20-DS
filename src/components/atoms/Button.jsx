@@ -8,7 +8,8 @@ export default function Button({children, variant='primary',
 
     const variantClass = {
         primary: 'btn-primary',
-        secondary: 'btn-secondary'
+        secondary: 'btn-secondary',
+        danger : 'btn-danger'
     } [variant] ?? 'btn-primary'
 
     const sizeClass = {
@@ -16,7 +17,8 @@ export default function Button({children, variant='primary',
         md: 'btn-md',
         lg:'btn-lg'
     }  [size] ?? 'btn-md'
-
+    {/* <button className='btn btn-primary btn-sm btn-disabled' >Primary Button</button> */}
+    
     return(
         <button className={ `${base} ${variantClass} ${sizeClass} 
             ${disabled? 'btn-disabled':''  } ${className}` }
